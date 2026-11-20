@@ -36,6 +36,9 @@ header h1{font-size:clamp(26px,4.5vw,38px);line-height:1.15;margin:6px 0 6px}
 .details{color:var(--muted);white-space:pre-line}
 .credit{color:var(--muted);font-size:14px;margin-top:4px}
 .credit a{color:var(--jade);text-underline-offset:2px}
+.courselink{position:absolute;top:0;right:0;display:inline-flex;align-items:center;gap:6px;padding:7px 14px;border-radius:999px;border:1px solid var(--jade);background:var(--card);color:var(--jade);font-size:14px;font-weight:600;text-decoration:none;white-space:nowrap}
+.courselink:hover{background:var(--jade);color:#fff}
+@media (max-width:640px){.courselink{position:static;margin:0 0 16px}}
 .banner{margin:20px 0 0;padding:14px 16px;border-radius:var(--radius);background:var(--amber-soft);color:var(--ink);border:1px solid color-mix(in srgb,var(--amber) 30%,transparent);white-space:pre-line}
 .banner b{color:var(--amber)}
 .btn{font:inherit;font-size:14px;font-weight:500;border:1px solid var(--line);background:var(--card);color:var(--ink);padding:7px 13px;border-radius:999px;cursor:pointer}
@@ -101,7 +104,8 @@ footer{margin-top:40px;color:var(--muted);font-size:13px;text-align:center}
 .topbtn{position:absolute;top:0;right:0;font-size:13px;line-height:1;color:var(--muted);background:transparent;border:1px solid var(--line);border-radius:999px;padding:7px 12px;text-decoration:none;white-space:nowrap}
 .topbtn:hover{color:var(--ink);border-color:var(--muted)}
 header{position:relative}
-
+    <a class="courselink" href="https://bruinlearn.ucla.edu/courses/120541" target="_blank" rel="noopener">Online course on Bruin Learn ↗</a>
+  
 /* modal */
 .modal{position:fixed;inset:0;background:rgba(10,14,12,.45);display:none;align-items:flex-start;justify-content:center;padding:30px 14px;overflow:auto;z-index:20}
 .modal.open{display:flex}
